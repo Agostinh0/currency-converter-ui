@@ -16,7 +16,7 @@ export class ConversionService {
   }
 
   getCurrencies(){
-    return this.http.get('https://free.currconv.com/api/v7/currencies?apiKey=e9e9513f302795759053');
+    return this.http.get(`${this.baseUrl}/api/v7/currencies?apiKey=e9e9513f302795759053`);
   }
 
 }
