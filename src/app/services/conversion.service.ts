@@ -15,4 +15,8 @@ export class ConversionService {
       .get(`${this.baseUrl}/api/v7/convert?q=${originalCurrency}_${currencyToConvert}&compact=ultra&apiKey=e9e9513f302795759053`);
   }
 
+  getCurrencies(){
+    return this.http.get('https://free.currconv.com/api/v7/currencies?apiKey=e9e9513f302795759053');
+  }
+
 }
